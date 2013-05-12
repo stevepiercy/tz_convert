@@ -65,41 +65,28 @@ Install and configure the following requirements.
 * [shell](http://www.lassosoft.com/tagSwap/detail/shell)
 * coreutils - Mac OS X has a useless implementation of date.  GNU coreutils must be installed to provide the necessary functionality of date required by this tag.
 
-    ---------- BEGIN COREUTILS INSTALL ---------------
-    
-    # Download and install Xcode.
-    # Requires an App Store or Apple Developer account to download.
-    https://developer.apple.com/xcode/
-    
-    # After installation of Xcode, go to
-    # Xcode > Preferences > Downloads
-    # and download and install the Command Line Tools.
-    
-    # Install macports.
-    http://www.macports.org/install.php
-    
-    # update macports
+
+### Coreutils Installation
+
+1. [Download and install Xcode](https://developer.apple.com/xcode/).  Requires an App Store or Apple Developer account to download.
+1. After installation of Xcode, go to *Xcode > Preferences > Downloads* and download and install the *Command Line Tools*.
+1. [Install macports](http://www.macports.org/install.php)
+1. update macports
+
     sudo port -d selfupdate
     
-    #upgrade installed ports
+1. upgrade installed ports
+
     port upgrade outdated
-    
-    # install coreutils
+
+1. install coreutils
+
     sudo port install coreutils
     
-    # The tools provided by GNU coreutils are prefixed
-    # with the character 'g' by default to distinguish them
-    # from the BSD commands.
-    
-    # For example, date becomes gdate, cp becomes gcp, and ls becomes gls.
-    
-    # If you want to use the GNU tools by default,
-    # add this directory to the front of your PATH environment variable
+1. The tools provided by GNU coreutils are prefixed with the character 'g' by default to distinguish them from the BSD commands.  For example, date becomes gdate, cp becomes gcp, and ls becomes gls.  If you want to use the GNU tools by default, add the following directory to the front of your PATH environment variable.
     
     /opt/local/libexec/gnubin/
     
-    ---------- END COREUTILS INSTALL ---------------
-
 More Information
 ----------------
 [Sources for Time Zone and Daylight Saving Time Data](http://www.twinsun.com/tz/tz-link.htm)
@@ -109,6 +96,7 @@ More Information
 [tz database, also called the zoneinfo database or IANA Time Zone Database](http://en.wikipedia.org/wiki/Tz_database)
 
 [date formats for GNU coreutils date](http://www.gnu.org/software/coreutils/manual/coreutils.html#date-invocation)
+
 OR
 
     man gdate
