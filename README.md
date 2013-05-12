@@ -73,19 +73,19 @@ Install and configure the following requirements.
 1. [Install macports](http://www.macports.org/install.php)
 1. update macports
 
-    sudo port -d selfupdate
+    `sudo port -d selfupdate`
     
 1. upgrade installed ports
 
-    port upgrade outdated
+    `port upgrade outdated`
 
 1. install coreutils
 
-    sudo port install coreutils
+    `sudo port install coreutils`
     
 1. The tools provided by GNU coreutils are prefixed with the character 'g' by default to distinguish them from the BSD commands.  For example, date becomes gdate, cp becomes gcp, and ls becomes gls.  If you want to use the GNU tools by default, add the following directory to the front of your PATH environment variable.
     
-    /opt/local/libexec/gnubin/
+    `/opt/local/libexec/gnubin/`
     
 More Information
 ----------------
