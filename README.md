@@ -69,7 +69,7 @@ Install and configure the following requirements.
 ### Coreutils Installation
 
 1. [Download and install Xcode](https://developer.apple.com/xcode/).  Requires an App Store or Apple Developer account to download.
-1. After installation of Xcode, go to *Xcode > Preferences > Downloads* and download and install the *Command Line Tools*.
+1. After installation of Xcode, go to **Xcode > Preferences > Downloads** and download and install the **Command Line Tools**.
 1. [Install macports](http://www.macports.org/install.php)
 1. update macports
 
