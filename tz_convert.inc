@@ -55,7 +55,7 @@ false.  Useful for debugging your logic.");
     if(#os >> 'Win');
         return('Windows is not supported.');
     else(#os >> 'Mac');
-        #gdate = '/opt/local/bin/gdate'; // set to your command for GNU date.  Type 'which gdate' at a shell prompt (Terminal on Mac OS X) to determine its location.
+        #gdate = '/usr/local/bin/gdate'; // set to your command for GNU date.  Type 'which gdate' at a shell prompt (Terminal on Mac OS X) to determine its location.
     else;
         // default for Linux OSs
         #gdate = '/bin/date'; // set to your command for GNU date.
