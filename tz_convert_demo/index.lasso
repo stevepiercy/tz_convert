@@ -1,8 +1,8 @@
 ﻿[
-// Either load the file tz_convert.inc during server or site startup,
+// Either load the file tz_convert.lasso during server or site startup,
 // in server or site library, or include it.  Choose one method.
 // I recommend site startup.
-// include('tz_convert.inc'); // optional loading method
+// include('tz_convert.lasso'); // optional loading method
 ]
 [
 define_tag(

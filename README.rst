@@ -77,7 +77,7 @@ Installation and Requirements
 =============================
 
 This repository contains both the tag ``[tz_convert]`` in a file named
-``tz_convert.inc`` and a directory ``tz_convert_demo`` containing the demo.
+``tz_convert.lasso`` and a directory ``tz_convert_demo`` containing the demo.
 In this directory there is a web page named ``index.lasso`` containing the
 ``tz_convert`` tag followed by a web form. The demo includes a jQuery plugin
 and jQuery itself.
