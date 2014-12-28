@@ -111,15 +111,23 @@ Coreutils Installation
    <http://brew.sh/>`_, but macports and fink should work just as well.
 #. The tools provided by GNU ``coreutils`` are prefixed with the character "g"
    by default to distinguish them from the BSD commands. For example, ``date``
-   becomes ``gdate``, ``cp`` becomes ``gcp``, and ``ls`` becomes ``gls``. If
+   becomes ``gdate``, ``cp`` becomes ``gcp``, and ``ls`` becomes ``gls``.
 #. (Optional: if you want to use the GNU tools by default without the leading
    `g`, then add the directory to the front of your ``PATH`` environment
    variable according to the package manager that you used to install
    ``coreutils``.)
+#. Configure the value for the location of gdate in ``tz_convert.lasso``. Type
+   ``which gdate`` at a shell prompt (Terminal on Mac OS X) to determine its
+   location.
 
-   .. code-block:: bash
+   .. code-block:: lasso
 
-        /usr/local/libexec/gnubin/
+        else(#os >> 'Mac');
+            #gdate = '/usr/local/bin'; // set to your command for GNU date.  Type 'which gdate' at a shell prompt (Terminal on Mac OS X) to determine its location.
+        else;
+            // default for Linux OSs
+            #gdate = '/bin/date'; // set to your command for GNU date.
+        /if;
 
 #. Try using your local demo.
 
