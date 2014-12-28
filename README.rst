@@ -1,5 +1,5 @@
-tz_convert - Utility for converting datetime types between time zones in Lasso 8
-################################################################################
+tz_convert - Convert datetime types between time zones in Lasso 8
+#################################################################
 
 Read the article on my `tz_convert - Convert datetime types between time zones in Lasso 8
 <http://www.stevepiercy.com/articles/tz_convert-convert-datetime-types-between-time-zones-in-lasso-8/>`_.
@@ -76,7 +76,7 @@ Output:
 Installation and Requirements
 =============================
 
-This repository contains both the tag ``[tz_convert]`` in a file named
+The repository contains both the tag ``[tz_convert]`` in a file named
 ``tz_convert.lasso`` and a directory ``tz_convert_demo`` containing the demo.
 In this directory there is a web page named ``index.lasso`` containing the
 ``tz_convert`` tag followed by a web form. The demo includes a jQuery plugin
@@ -84,6 +84,12 @@ and jQuery itself.
 
 * `jQuery Date/Time Entry <http://keith-wood.name/datetimeEntry.html>`_
 * `jQuery <http://jquery.com/>`_
+
+The demo requires ``[tz_select]`` in order to render an HTML select menu of
+timezones, but is not required by ``[tz_convert]``. For more information on
+``[tz_select]``, read the article `tz_select - Display an HTML select menu of
+time zones with Lasso
+<http://www.stevepiercy.com/articles/tz_select-display-an-html-select-menu-of-time-zones-with-lasso/>`_.
 
 Install and configure the following requirements.
 
@@ -106,9 +112,10 @@ Coreutils Installation
 #. The tools provided by GNU ``coreutils`` are prefixed with the character "g"
    by default to distinguish them from the BSD commands. For example, ``date``
    becomes ``gdate``, ``cp`` becomes ``gcp``, and ``ls`` becomes ``gls``. If
-   you want to use the GNU tools by default, add the a directory to the front
-   of your ``PATH`` environment variable, according to the package manager
-   you used to install ``coreutils``.
+#. (Optional: if you want to use the GNU tools by default without the leading
+   `g`, then add the directory to the front of your ``PATH`` environment
+   variable according to the package manager that you used to install
+   ``coreutils``.)
 
    .. code-block:: bash
 
