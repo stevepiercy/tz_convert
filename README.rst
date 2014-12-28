@@ -1,7 +1,7 @@
 tz_convert - Convert datetime types between time zones in Lasso 8
 #################################################################
 
-Read the article on my `tz_convert - Convert datetime types between time zones in Lasso 8
+Read the article `tz_convert - Convert datetime types between time zones in Lasso 8
 <http://www.stevepiercy.com/articles/tz_convert-convert-datetime-types-between-time-zones-in-lasso-8/>`_.
 
 Description
